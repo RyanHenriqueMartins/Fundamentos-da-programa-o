@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>    
+    <body>
+        <h2>Calcula juros</h2>
+
+        <script>
+            var c, i, j, n, ms, mc;
+
+			c = Number(prompt("Digite o valor para o capital"));
+			i = Number(prompt("Digite o valor para a taxa"));
+			n = Number(prompt("Digite o valor para a quantidade de períodos"));
+			
+			ms = c * i * n;
+			mc = c * Math.pow(1 + i, n);
+
+			document.write(`Juros simples: ${ms.toFixed(2)} <BR> Juros Compostos: ${mc.toFixed(2)}`);
+        </script>
+
+    </body>
+</html>

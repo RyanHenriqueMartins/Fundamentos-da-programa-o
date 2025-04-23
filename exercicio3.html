@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>    
+    <body>
+        <h2>Média km/h, km/l</h2>
+
+        <script>
+        var distancia, t, kmh, kml,l;
+
+        distancia = Number(prompt("Qual foi a distância percorrida pelo automóvel? "))   
+        t = Number(prompt("Quantas horas o automóvel demorou para percorrer a distância?"))     
+        l = Number(prompt("Qual foi quantidade de combustivel em litros utliziada pelo carro?")) 
+     
+    
+        kmh = distancia / t;
+
+        kml = distancia / l;
+
+            document.write(`<br> A velocidade média do automovel é: ${kmh}`); 
+           
+          
+           document.write(`<br> O consumo médio do automóvel foi de: ${kml}`);
+           
+        
+
+
+
+
+        </script>
+
+    </body>
+</html>

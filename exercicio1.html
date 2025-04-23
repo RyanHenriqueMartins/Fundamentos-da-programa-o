@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>    
+    <body>
+        <h2>Distancia e cordenadas </h2>
+
+        <script>
+        var xA, yA, xB, yB, distancia;
+
+        xA = Number(prompt("Digite a cordenada x do ponto A:"));
+        yA = Number(prompt("Digite a cordenada x do ponto A:"));    
+        xB = Number(prompt("Digite a cordenada x do ponto B:"));
+        yB = Number(prompt("Digite a cordenada x do ponto B:"));
+
+        distancia = Math.sqrt(Math.pow(xB-xA, 2)+ Math.pow(yB-yA, 2));
+
+      <!--alert("A distância entre os pontos A e B é:" + distancia.toFixed(2)); Outra forma de resolver o exercicio-->  
+
+            document.write(` A distância entre os pontos A e B é: ${distancia.toFixed(2)}`);<!--Professor prefere desta forma, pois aparece na página o resultado-->
+
+
+
+
+        </script>
+
+    </body>
+</html>
