@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>    
+   
+<head>
+ <script> function verificarNumero(n)
+    {
+        if (n % 2 == 0)
+            return true;
+        else
+            return false;
+    }
+    </script>
+</head>
+
+
+<body>
+        <h2> Impar ou par? </h2>
+
+        <script>
+        var k, res;
+
+        k = Number(prompt("Digite o número para ver se ele é par ou ímpar"));
+       
+        res = verificarNumero(k);
+
+        if (res == true)
+            document.write(`<br> O número digitado é par`);
+       
+            else
+            document.write(`O número digitado é ímpar`);
+
+
+        </script>
+
+    </body>
+</html>
