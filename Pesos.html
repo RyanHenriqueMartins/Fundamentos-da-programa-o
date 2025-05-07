@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+      <head>
+          
+               <script>
+                      function CalculoPesoIdeal(altura, sexo)
+                      {
+                              
+                       
+                          if (sexo === 'H' || sexo === 'h'){
+                           
+                                return  72.7 * altura - 58.0;}
+                         
+                               
+                                else if (sexo === 'M' || sexo ==='m'){
+                                    
+                                         return 62.1 * altura - 44.7;}
+                                    
+                                         else{
+
+                                                return null; //sinaliza erro
+                                         }
+
+
+                      }
+
+               </script>
+      </head>
+               <body>
+                  
+                <h2>Peso Ideal masculino e feminino</h2>
+               
+                    <script>
+                     
+                          var altura, sexo, res;
+
+                                 sexo = (prompt("Informe o seu sexo, digite H se for homem ou M se for mulher"));
+                                 altura = parseFloat(prompt("Digite sua altura exata"));
+
+                          res = CalculoPesoIdeal(altura, sexo);
+
+                            if(res !== null)
+                              document.write(`O seu peso ideal: ${res.toFixed(2)}`);
+                              else{
+                                document.write("Os dados digitados são inválidos, verique se está sendo digitado corretamente")
+                              }
+
+
+                      </script>
+
+              </body>
+</html>
