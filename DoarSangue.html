@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+      <head>
+          
+               <script>
+                      function requisitosDoaçãodesangue(idade, peso)
+                     {                   
+                            if ( idade >= 18 && idade <= 67 && peso >= 50)
+                                return true;
+                                
+                                    else
+                                      return false;
+                                   
+                                       
+                            }
+
+               </script>
+      </head>
+               <body>
+                  
+                <h2>Doar sangue</h2>
+               
+                    <script>
+                     
+                          var idade, peso, res;
+
+                            idade = Number(prompt("Nos informe sua idade"));
+                            peso  = Number(prompt("Nos informe seu peso em kg"));
+                                
+                              res = requisitosDoaçãodesangue(idade, peso);
+                                
+                            if (res == true)
+                                document.write(`Você cumpre os pré-requisitos para doar sangue`);
+                    
+                                else
+                                    document.write(`Infelizmente você não cumpre os pré-requisitos para efetuar a doação de sangue`);
+                        
+
+                      </script>
+
+              </body>
+</html>
