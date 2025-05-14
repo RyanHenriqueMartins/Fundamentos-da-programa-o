@@ -4,10 +4,22 @@
 <html>    
          <head>
             <script>
-                function  dobroValores(i)
+                function  somaMedia(i)
               {   
-                  
-                                                    
+
+
+
+                    do{
+                        
+                            v = parseInt(prompt(''))
+                             
+                            if ( v % 2 == 0 )
+                            {soma += v; cont++}
+                        
+                        } while ( i <= 6);
+                            
+                                document.writeln(`${soma} e ${soma/cont}`);
+
                              }
 
              </script>
@@ -20,12 +32,12 @@
                            <h2> Dobro </h2>
 
                      <script>
-                          var i;
+                          var i, soma, cont;
 
-                           i = 
-                                
+                           i = 1;
+                           soma = 0;         
+                           cont = 0;  
 
-           
     
 
                      </script>
