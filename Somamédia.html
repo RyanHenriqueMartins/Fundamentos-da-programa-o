@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>    
+        <head>
+            <script>
+                function  SomaMedia()
+                {   
+                    var soma = 0;
+                    var cont = 0;
+                    var v;
+                      
+                    do
+                    {
+                        v = prompt('_');
+                                
+                        if (v >= 0)
+                        {
+                            soma += v;
+                            cont++;
+                        } 
+                    } while ( v > 0 );
+
+                    document.writeln (`${soma} e ${soma/cont}`);
+                }
+
+            </script>
+
+
+        </head>
+
+
+            <body>
+                           <h2> Soma e média dos mesmos </h2>
+
+                     <script>
+                          SomaMedia();        
+    
+
+                     </script>
+
+            </body>
+</html>
