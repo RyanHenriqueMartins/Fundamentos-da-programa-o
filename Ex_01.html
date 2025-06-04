@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>    
+        <head>
+            <script>
+                function LeiaValores()
+                {  
+                  A = Number(prompt("Digite o valor de A:"));
+                  B = Number(prompt("Digie o valor de B:")); 
+                  calculo = A + B;
+                  i = 0; 
+                  cont = A;
+                  do{
+                        document.writeln(`${A} + ${B} = ${calculo}`)
+                         do{
+                                if(cont % 2 == 0){
+                                document.writeln(`Os intevalos são: ${cont}<BR>`);}
+                                cont++;
+                        
+                            }while ( cont <= calculo )
+                  }while(calculo < 0)
+                  }
+                    
+            </script>
+
+        </head>
+
+
+            <body>
+                <h2>Escreva um programa que leia 2 valores A e B quaisquer 
+                    e, depois, some e escreva (emvídeo) os valores pares no intervalo [A, B]</h2>
+                    <script>
+                     LeiaValores();
+                        
+                       
+                         
+
+                    </script>
+            </body>
+</html>
