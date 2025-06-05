@@ -1,0 +1,48 @@
+<!DOCTYPE html>Add commentMore actions
+<meta charset="UTF-8">
+
+<html>
+
+<head>
+    <script>
+        function idades() 
+        {
+            let menos = 0;
+            let mais = 0;
+            let idade;
+            do {
+                idade = parseInt(prompt("Digite sua idade (ou -1 para encerrar o processo)"))
+                if(idade !== -1){
+                  if(idade < 21){
+                    menos++;
+                  }  
+                  if(idade > 50){
+                    mais++;
+                  }
+                }
+
+            } while (idade !== -1)
+                document.write(`O total de pessoas com idade menor que 21 anos é: ${menos}<BR> O total de pessoas com idade maior de 50 anos é:${mais}`)
+        }
+    </script>
+
+</head>
+
+
+<body>
+    <h2>Escreva um programa que leia a idade de várias pessoas e escreva (em vídeo):
+        a. O total de pessoas com menos de 21 anos; e
+        b. O total de pessoas com mais de 50 anos.
+        Obs.: utilize o valor -1 para indicar o término do processo de leituras, ao invés de definir umaquantidade
+        específica de
+        valores a serem lidos; e o valor -1 não deve ser considerado para oscálculos de (a) e (b)</h2>
+    <script>
+
+        idades();
+
+
+
+
+    </script>
+</body>
+</html>
