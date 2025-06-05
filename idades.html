@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>    
+        <head>
+            <script>
+                function idades()
+                {  
+                    pessoas = Number(prompt("Qual a quantidade de pessoas que vai participar da pesquisa?"))
+                    menos = 21;
+                    mais = 50;
+                    i = 1;
+                    menos21 = 0;
+                    mais50 = 0;
+                    do{
+                           if( i <= pessoas ){
+                                idade = Number(prompt("Digite sua idade:"))
+                           }
+                            i++; 
+                             do{
+                                  if(idade < menos){
+                                    menos21++;}
+                                    do{
+                                        if(idade > 50)
+                                        
+                                    }
+                              }while(menos21 < pessoas)
+                              
+
+                        } while(i <= pessoas)
+                        document.writeln(`O total de participantes foi de : ${pessoas}<BR>`)
+                      document.writeln(`O total de pessoas com menos de 21 anos é: ${menos21}`)
+                      
+                             
+                }
+            </script>
+
+        </head>
+
+
+            <body>
+                <h2>Escreva um programa que leia a idade de várias pessoas e escreva (em vídeo):
+                    a. O total de pessoas com menos de 21 anos; e
+                    b. O total de pessoas com mais de 50 anos.
+                    Obs.: utilize o valor -1 para indicar o término do processo de leituras, ao invés de definir umaquantidade específica de
+                    valores a serem lidos; e o valor -1 não deve ser considerado para oscálculos de (a) e (b)</h2>
+                    <script>
+                     
+                     idades();
+                        
+                       
+                         
+
+                    </script>
+            </body>
+</html>
