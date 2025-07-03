@@ -1,0 +1,11 @@
+function SomaMatrizes(matA, matB) {
+    let somaMatrizes = 0;
+
+    for (let i = 0; i < matA.length; i++) {
+        for (let j = 0; j < matA[i].length; j++) {
+            somaMatrizes += matA[i][j] + matB[i][j];
+        }
+    }
+
+    return somaMatrizes;
+}
